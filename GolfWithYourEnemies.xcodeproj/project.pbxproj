@@ -7,40 +7,40 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		65245E382E3635F80089E688 /* PBXContainerItemProxy */ = {
+		65245DE52E3240050089E688 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 65245E222E3635F60089E688 /* Project object */;
+			containerPortal = 65245DC32E3240030089E688 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 65245E292E3635F60089E688;
+			remoteGlobalIDString = 65245DCA2E3240030089E688;
 			remoteInfo = GolfWithYourEnemies;
 		};
-		65245E422E3635F80089E688 /* PBXContainerItemProxy */ = {
+		65245DEF2E3240050089E688 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 65245E222E3635F60089E688 /* Project object */;
+			containerPortal = 65245DC32E3240030089E688 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 65245E292E3635F60089E688;
+			remoteGlobalIDString = 65245DCA2E3240030089E688;
 			remoteInfo = GolfWithYourEnemies;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		65245E2A2E3635F60089E688 /* GolfWithYourEnemies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfWithYourEnemies.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65245E372E3635F80089E688 /* GolfWithYourEnemiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfWithYourEnemiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		65245E412E3635F80089E688 /* GolfWithYourEnemiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfWithYourEnemiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65245DCB2E3240030089E688 /* GolfWithYourEnemies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfWithYourEnemies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65245DE42E3240050089E688 /* GolfWithYourEnemiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfWithYourEnemiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65245DEE2E3240050089E688 /* GolfWithYourEnemiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfWithYourEnemiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		65245E2C2E3635F60089E688 /* GolfWithYourEnemies */ = {
+		65245DCD2E3240030089E688 /* GolfWithYourEnemies */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = GolfWithYourEnemies;
 			sourceTree = "<group>";
 		};
-		65245E3A2E3635F80089E688 /* GolfWithYourEnemiesTests */ = {
+		65245DE72E3240050089E688 /* GolfWithYourEnemiesTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = GolfWithYourEnemiesTests;
 			sourceTree = "<group>";
 		};
-		65245E442E3635F80089E688 /* GolfWithYourEnemiesUITests */ = {
+		65245DF12E3240050089E688 /* GolfWithYourEnemiesUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = GolfWithYourEnemiesUITests;
 			sourceTree = "<group>";
@@ -48,21 +48,21 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		65245E272E3635F60089E688 /* Frameworks */ = {
+		65245DC82E3240030089E688 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65245E342E3635F80089E688 /* Frameworks */ = {
+		65245DE12E3240050089E688 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65245E3E2E3635F80089E688 /* Frameworks */ = {
+		65245DEB2E3240050089E688 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,22 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		65245E212E3635F60089E688 = {
+		65245DC22E3240030089E688 = {
 			isa = PBXGroup;
 			children = (
-				65245E2C2E3635F60089E688 /* GolfWithYourEnemies */,
-				65245E3A2E3635F80089E688 /* GolfWithYourEnemiesTests */,
-				65245E442E3635F80089E688 /* GolfWithYourEnemiesUITests */,
-				65245E2B2E3635F60089E688 /* Products */,
+				65245DCD2E3240030089E688 /* GolfWithYourEnemies */,
+				65245DE72E3240050089E688 /* GolfWithYourEnemiesTests */,
+				65245DF12E3240050089E688 /* GolfWithYourEnemiesUITests */,
+				65245DCC2E3240030089E688 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		65245E2B2E3635F60089E688 /* Products */ = {
+		65245DCC2E3240030089E688 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65245E2A2E3635F60089E688 /* GolfWithYourEnemies.app */,
-				65245E372E3635F80089E688 /* GolfWithYourEnemiesTests.xctest */,
-				65245E412E3635F80089E688 /* GolfWithYourEnemiesUITests.xctest */,
+				65245DCB2E3240030089E688 /* GolfWithYourEnemies.app */,
+				65245DE42E3240050089E688 /* GolfWithYourEnemiesTests.xctest */,
+				65245DEE2E3240050089E688 /* GolfWithYourEnemiesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,134 +95,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65245E292E3635F60089E688 /* GolfWithYourEnemies */ = {
+		65245DCA2E3240030089E688 /* GolfWithYourEnemies */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65245E4B2E3635F80089E688 /* Build configuration list for PBXNativeTarget "GolfWithYourEnemies" */;
+			buildConfigurationList = 65245DF82E3240050089E688 /* Build configuration list for PBXNativeTarget "GolfWithYourEnemies" */;
 			buildPhases = (
-				65245E262E3635F60089E688 /* Sources */,
-				65245E272E3635F60089E688 /* Frameworks */,
-				65245E282E3635F60089E688 /* Resources */,
+				65245DC72E3240030089E688 /* Sources */,
+				65245DC82E3240030089E688 /* Frameworks */,
+				65245DC92E3240030089E688 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				65245E2C2E3635F60089E688 /* GolfWithYourEnemies */,
+				65245DCD2E3240030089E688 /* GolfWithYourEnemies */,
 			);
 			name = GolfWithYourEnemies;
 			packageProductDependencies = (
 			);
 			productName = GolfWithYourEnemies;
-			productReference = 65245E2A2E3635F60089E688 /* GolfWithYourEnemies.app */;
+			productReference = 65245DCB2E3240030089E688 /* GolfWithYourEnemies.app */;
 			productType = "com.apple.product-type.application";
 		};
-		65245E362E3635F80089E688 /* GolfWithYourEnemiesTests */ = {
+		65245DE32E3240050089E688 /* GolfWithYourEnemiesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65245E4E2E3635F80089E688 /* Build configuration list for PBXNativeTarget "GolfWithYourEnemiesTests" */;
+			buildConfigurationList = 65245DFB2E3240050089E688 /* Build configuration list for PBXNativeTarget "GolfWithYourEnemiesTests" */;
 			buildPhases = (
-				65245E332E3635F80089E688 /* Sources */,
-				65245E342E3635F80089E688 /* Frameworks */,
-				65245E352E3635F80089E688 /* Resources */,
+				65245DE02E3240050089E688 /* Sources */,
+				65245DE12E3240050089E688 /* Frameworks */,
+				65245DE22E3240050089E688 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				65245E392E3635F80089E688 /* PBXTargetDependency */,
+				65245DE62E3240050089E688 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				65245E3A2E3635F80089E688 /* GolfWithYourEnemiesTests */,
+				65245DE72E3240050089E688 /* GolfWithYourEnemiesTests */,
 			);
 			name = GolfWithYourEnemiesTests;
 			packageProductDependencies = (
 			);
 			productName = GolfWithYourEnemiesTests;
-			productReference = 65245E372E3635F80089E688 /* GolfWithYourEnemiesTests.xctest */;
+			productReference = 65245DE42E3240050089E688 /* GolfWithYourEnemiesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		65245E402E3635F80089E688 /* GolfWithYourEnemiesUITests */ = {
+		65245DED2E3240050089E688 /* GolfWithYourEnemiesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65245E512E3635F80089E688 /* Build configuration list for PBXNativeTarget "GolfWithYourEnemiesUITests" */;
+			buildConfigurationList = 65245DFE2E3240050089E688 /* Build configuration list for PBXNativeTarget "GolfWithYourEnemiesUITests" */;
 			buildPhases = (
-				65245E3D2E3635F80089E688 /* Sources */,
-				65245E3E2E3635F80089E688 /* Frameworks */,
-				65245E3F2E3635F80089E688 /* Resources */,
+				65245DEA2E3240050089E688 /* Sources */,
+				65245DEB2E3240050089E688 /* Frameworks */,
+				65245DEC2E3240050089E688 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				65245E432E3635F80089E688 /* PBXTargetDependency */,
+				65245DF02E3240050089E688 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				65245E442E3635F80089E688 /* GolfWithYourEnemiesUITests */,
+				65245DF12E3240050089E688 /* GolfWithYourEnemiesUITests */,
 			);
 			name = GolfWithYourEnemiesUITests;
 			packageProductDependencies = (
 			);
 			productName = GolfWithYourEnemiesUITests;
-			productReference = 65245E412E3635F80089E688 /* GolfWithYourEnemiesUITests.xctest */;
+			productReference = 65245DEE2E3240050089E688 /* GolfWithYourEnemiesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		65245E222E3635F60089E688 /* Project object */ = {
+		65245DC32E3240030089E688 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					65245E292E3635F60089E688 = {
+					65245DCA2E3240030089E688 = {
 						CreatedOnToolsVersion = 16.4;
 					};
-					65245E362E3635F80089E688 = {
+					65245DE32E3240050089E688 = {
 						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 65245E292E3635F60089E688;
+						TestTargetID = 65245DCA2E3240030089E688;
 					};
-					65245E402E3635F80089E688 = {
+					65245DED2E3240050089E688 = {
 						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 65245E292E3635F60089E688;
+						TestTargetID = 65245DCA2E3240030089E688;
 					};
 				};
 			};
-			buildConfigurationList = 65245E252E3635F60089E688 /* Build configuration list for PBXProject "GolfWithYourEnemies" */;
+			buildConfigurationList = 65245DC62E3240030089E688 /* Build configuration list for PBXProject "GolfWithYourEnemies" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 65245E212E3635F60089E688;
+			mainGroup = 65245DC22E3240030089E688;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 65245E2B2E3635F60089E688 /* Products */;
+			productRefGroup = 65245DCC2E3240030089E688 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65245E292E3635F60089E688 /* GolfWithYourEnemies */,
-				65245E362E3635F80089E688 /* GolfWithYourEnemiesTests */,
-				65245E402E3635F80089E688 /* GolfWithYourEnemiesUITests */,
+				65245DCA2E3240030089E688 /* GolfWithYourEnemies */,
+				65245DE32E3240050089E688 /* GolfWithYourEnemiesTests */,
+				65245DED2E3240050089E688 /* GolfWithYourEnemiesUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		65245E282E3635F60089E688 /* Resources */ = {
+		65245DC92E3240030089E688 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65245E352E3635F80089E688 /* Resources */ = {
+		65245DE22E3240050089E688 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65245E3F2E3635F80089E688 /* Resources */ = {
+		65245DEC2E3240050089E688 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,21 +232,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		65245E262E3635F60089E688 /* Sources */ = {
+		65245DC72E3240030089E688 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65245E332E3635F80089E688 /* Sources */ = {
+		65245DE02E3240050089E688 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65245E3D2E3635F80089E688 /* Sources */ = {
+		65245DEA2E3240050089E688 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,20 +256,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		65245E392E3635F80089E688 /* PBXTargetDependency */ = {
+		65245DE62E3240050089E688 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 65245E292E3635F60089E688 /* GolfWithYourEnemies */;
-			targetProxy = 65245E382E3635F80089E688 /* PBXContainerItemProxy */;
+			target = 65245DCA2E3240030089E688 /* GolfWithYourEnemies */;
+			targetProxy = 65245DE52E3240050089E688 /* PBXContainerItemProxy */;
 		};
-		65245E432E3635F80089E688 /* PBXTargetDependency */ = {
+		65245DF02E3240050089E688 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 65245E292E3635F60089E688 /* GolfWithYourEnemies */;
-			targetProxy = 65245E422E3635F80089E688 /* PBXContainerItemProxy */;
+			target = 65245DCA2E3240030089E688 /* GolfWithYourEnemies */;
+			targetProxy = 65245DEF2E3240050089E688 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		65245E492E3635F80089E688 /* Debug */ = {
+		65245DF62E3240050089E688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -333,7 +333,7 @@
 			};
 			name = Debug;
 		};
-		65245E4A2E3635F80089E688 /* Release */ = {
+		65245DF72E3240050089E688 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -390,7 +390,7 @@
 			};
 			name = Release;
 		};
-		65245E4C2E3635F80089E688 /* Debug */ = {
+		65245DF92E3240050089E688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -398,11 +398,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WT438UAQVS;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -418,7 +418,7 @@
 			};
 			name = Debug;
 		};
-		65245E4D2E3635F80089E688 /* Release */ = {
+		65245DFA2E3240050089E688 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -426,11 +426,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WT438UAQVS;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -446,7 +446,7 @@
 			};
 			name = Release;
 		};
-		65245E4F2E3635F80089E688 /* Debug */ = {
+		65245DFC2E3240050089E688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -465,7 +465,7 @@
 			};
 			name = Debug;
 		};
-		65245E502E3635F80089E688 /* Release */ = {
+		65245DFD2E3240050089E688 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,7 +484,7 @@
 			};
 			name = Release;
 		};
-		65245E522E3635F80089E688 /* Debug */ = {
+		65245DFF2E3240050089E688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -501,7 +501,7 @@
 			};
 			name = Debug;
 		};
-		65245E532E3635F80089E688 /* Release */ = {
+		65245E002E3240050089E688 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -521,43 +521,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65245E252E3635F60089E688 /* Build configuration list for PBXProject "GolfWithYourEnemies" */ = {
+		65245DC62E3240030089E688 /* Build configuration list for PBXProject "GolfWithYourEnemies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65245E492E3635F80089E688 /* Debug */,
-				65245E4A2E3635F80089E688 /* Release */,
+				65245DF62E3240050089E688 /* Debug */,
+				65245DF72E3240050089E688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65245E4B2E3635F80089E688 /* Build configuration list for PBXNativeTarget "GolfWithYourEnemies" */ = {
+		65245DF82E3240050089E688 /* Build configuration list for PBXNativeTarget "GolfWithYourEnemies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65245E4C2E3635F80089E688 /* Debug */,
-				65245E4D2E3635F80089E688 /* Release */,
+				65245DF92E3240050089E688 /* Debug */,
+				65245DFA2E3240050089E688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65245E4E2E3635F80089E688 /* Build configuration list for PBXNativeTarget "GolfWithYourEnemiesTests" */ = {
+		65245DFB2E3240050089E688 /* Build configuration list for PBXNativeTarget "GolfWithYourEnemiesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65245E4F2E3635F80089E688 /* Debug */,
-				65245E502E3635F80089E688 /* Release */,
+				65245DFC2E3240050089E688 /* Debug */,
+				65245DFD2E3240050089E688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65245E512E3635F80089E688 /* Build configuration list for PBXNativeTarget "GolfWithYourEnemiesUITests" */ = {
+		65245DFE2E3240050089E688 /* Build configuration list for PBXNativeTarget "GolfWithYourEnemiesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65245E522E3635F80089E688 /* Debug */,
-				65245E532E3635F80089E688 /* Release */,
+				65245DFF2E3240050089E688 /* Debug */,
+				65245E002E3240050089E688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 65245E222E3635F60089E688 /* Project object */;
+	rootObject = 65245DC32E3240030089E688 /* Project object */;
 }

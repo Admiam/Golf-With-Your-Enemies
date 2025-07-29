@@ -4,6 +4,15 @@ import GameplayKit
 /// Mini‑golf course with a wooden border (bounces) surrounded by water (blue background).
 /// Drag backwards from the ball to shoot. The camera follows the ball.
 class GameScene: SKScene {
+    private var winShown = false
+    private let course: Course
+    
+    init(course: Course, size: CGSize) {
+           self.course = course
+           super.init(size: size)
+           anchorPoint = CGPoint(x: 0.5, y: 0.5)   // centre-origin simplifies math
+       }
+       required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
     // MARK: - Nodes
     private var ball = SKShapeNode(circleOfRadius: 10)
@@ -11,7 +20,7 @@ class GameScene: SKScene {
     private var aimLine: SKShapeNode?
     private var courseNode: SKShapeNode!      // green fairway with brown border
     private var touchStart: CGPoint?
-
+    
     // MARK: - Tuning
     private let stopVelocity: CGFloat = 10     // pts/s
     private let borderWidth: CGFloat = 20      // visual + physics thickness
@@ -25,6 +34,8 @@ class GameScene: SKScene {
 
     // MARK: - Scene Lifecycle
     override func didMove(to view: SKView) {
+        print("✅ GameScene didMove: size =", size, "anchor:", anchorPoint)
+
         // Water outside the course
         backgroundColor = .systemBlue
         physicsWorld.gravity = .zero
@@ -42,28 +53,33 @@ class GameScene: SKScene {
 
     // MARK: - Course
     private func buildCourse() {
-        // ❶ desired green size
-        let courseSize = CGSize(width: 1200, height: 800)
-
-        // ❷ centre it in the scene
-        let fairwayRect = CGRect(
-            origin: CGPoint(x: frame.midX - courseSize.width  / 2,
-                            y: frame.midY - courseSize.height / 2),
-            size: courseSize)
-
-        // Green interior & brown wooden border
-        let path = CGPath(roundedRect: fairwayRect, cornerWidth: 16, cornerHeight: 16, transform: nil)
-        courseNode = SKShapeNode(path: path)
-        courseNode.fillColor   = .systemGreen
-        courseNode.strokeColor = .brown
-        courseNode.lineWidth   = borderWidth
-        addChild(courseNode)
-
-        // Physics edge (uses inner edge so the ball never clips into the paint)
-        let innerRect = fairwayRect.insetBy(dx: borderWidth/2, dy: borderWidth/2)
-        courseNode.physicsBody = SKPhysicsBody(edgeLoopFrom: innerRect)
-        courseNode.physicsBody?.categoryBitMask = Cat.border
-        courseNode.physicsBody?.restitution = 0.6     // bounce factor
+           let builder = CourseBuilder()
+           courseNode = builder.addCourse(to: self,
+                                          spec: course,
+                                          catBorder: Cat.border)
+           
+//        // ❶ desired green size
+//        let courseSize = CGSize(width: 1200, height: 800)
+//
+//        // ❷ centre it in the scene
+//        let fairwayRect = CGRect(
+//            origin: CGPoint(x: frame.midX - courseSize.width  / 2,
+//                            y: frame.midY - courseSize.height / 2),
+//            size: courseSize)
+//
+//        // Green interior & brown wooden border
+//        let path = CGPath(roundedRect: fairwayRect, cornerWidth: 16, cornerHeight: 16, transform: nil)
+//        courseNode = SKShapeNode(path: path)
+//        courseNode.fillColor   = .systemGreen
+//        courseNode.strokeColor = .brown
+//        courseNode.lineWidth   = borderWidth
+//        addChild(courseNode)
+//
+//        // Physics edge (uses inner edge so the ball never clips into the paint)
+//        let innerRect = fairwayRect.insetBy(dx: borderWidth/2, dy: borderWidth/2)
+//        courseNode.physicsBody = SKPhysicsBody(edgeLoopFrom: innerRect)
+//        courseNode.physicsBody?.categoryBitMask = Cat.border
+//        courseNode.physicsBody?.restitution = 0.6     // bounce factor
     }
 
     // MARK: - Ball & hole
@@ -72,7 +88,8 @@ class GameScene: SKScene {
         ball.name = "ball"
         ball.fillColor = .white
         ball.strokeColor = .lightGray
-        ball.position = CGPoint(x: frame.midX - 100, y: frame.midY)
+//        ball.position = CGPoint(x: frame.midX - 100, y: frame.midY)
+        ball.position = course.ballStart
         let ballBody = SKPhysicsBody(circleOfRadius: 10)
         ballBody.restitution   = 0.6
         ballBody.friction      = 0.3
@@ -87,7 +104,8 @@ class GameScene: SKScene {
         hole.name = "hole"
         hole.fillColor = .black
         hole.strokeColor = .black
-        hole.position = CGPoint(x: frame.midX + 150, y: frame.midY)
+//        hole.position = CGPoint(x: frame.midX + 150, y: frame.midY)
+        hole.position = course.cupPosition
         let holeBody = SKPhysicsBody(circleOfRadius: 14)
         holeBody.isDynamic = false
         holeBody.categoryBitMask = Cat.hole
@@ -98,12 +116,16 @@ class GameScene: SKScene {
 
     // MARK: - Game Loop
     override func update(_ currentTime: TimeInterval) {
+//        print("Ball pos:", ball.position, "Camera pos:", camera?.position ?? .zero)
+
         guard let v = ball.physicsBody?.velocity else { return }
         if hypot(v.dx, v.dy) < stopVelocity {
             ball.physicsBody?.velocity = .zero
             ball.physicsBody?.angularVelocity = 0
         }
-        camera?.position = ball.position
+        if !winShown {
+            camera?.position = ball.position
+        }
     }
 
     // MARK: - Touch Handling (drag‑to‑shoot)
@@ -140,15 +162,28 @@ class GameScene: SKScene {
 extension GameScene: SKPhysicsContactDelegate {
     func didBegin(_ c: SKPhysicsContact) {
         let names = [c.bodyA.node?.name, c.bodyB.node?.name]
-        if names.contains("ball") && names.contains("hole") {
-            ball.removeFromParent(); showWinLabel()
+        if !winShown && names.contains("ball") && names.contains("hole") {
+            winShown = true
+            ball.removeFromParent();
+            centerCamereOnHole()
         }
+    }
+    
+    private func centerCamereOnHole() {
+        guard let cam = camera else { return }
+        
+        let move = SKAction.move(to: hole.position, duration: 0.6)
+        move.timingMode = .easeInEaseOut
+        
+        cam.run(move) { [weak self] in self?.showWinLabel()}
     }
 
     private func showWinLabel() {
         let label = SKLabelNode(text: "Hole in One!")
-        label.fontName = "AvenirNext-Bold"; label.fontSize = 42; label.fontColor = .yellow
-        label.position = CGPoint(x: frame.midX, y: frame.midY)
-        addChild(label)
+        label.fontName = "AvenirNext-Bold"
+        label.fontSize = 42
+        label.fontColor = .yellow
+        label.position  = CGPoint(x: 0, y: 120)
+        camera?.addChild(label)
     }
 }
